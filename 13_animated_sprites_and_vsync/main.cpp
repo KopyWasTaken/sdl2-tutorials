@@ -352,7 +352,7 @@ int main( int argc, char* args[])
 			// go to the next frame
 			++frame;
 
-			// cycle animation
+			// cycle animation :D 
 			if (frame / 64 >= WALKING_ANIMATION_FRAMES)
 			{
 				frame = 0;

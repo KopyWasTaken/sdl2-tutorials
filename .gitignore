@@ -1,2 +1,5 @@
 # That dumb thing on MacOS
 .DS_Store
+
+# why is there a vscode file here?
+.vscode

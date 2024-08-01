@@ -1,0 +1,720 @@
+Performing C SOURCE FILE Test HAVE_GCC_WDOCUMENTATION failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_12042/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_12042.dir/build.make CMakeFiles/cmTC_12042.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_12042.dir/src.c.o
+/usr/bin/cc -DHAVE_GCC_WDOCUMENTATION  -D_GNU_SOURCE=1   -Wdocumentation -o CMakeFiles/cmTC_12042.dir/src.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command-line option '-Wdocumentation'
+gmake[1]: *** [CMakeFiles/cmTC_12042.dir/build.make:78: CMakeFiles/cmTC_12042.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_12042/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_GCC_WDOCUMENTATION_UNKNOWN_COMMAND failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2522c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2522c.dir/build.make CMakeFiles/cmTC_2522c.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2522c.dir/src.c.o
+/usr/bin/cc -DHAVE_GCC_WDOCUMENTATION_UNKNOWN_COMMAND  -D_GNU_SOURCE=1   -Wdocumentation-unknown-command -o CMakeFiles/cmTC_2522c.dir/src.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command-line option '-Wdocumentation-unknown-command'
+gmake[1]: *** [CMakeFiles/cmTC_2522c.dir/build.make:78: CMakeFiles/cmTC_2522c.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_2522c/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_GCC_COMMENT_BLOCK_COMMANDS failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2a357/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2a357.dir/build.make CMakeFiles/cmTC_2a357.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2a357.dir/src.c.o
+/usr/bin/cc -DHAVE_GCC_COMMENT_BLOCK_COMMANDS  -D_GNU_SOURCE=1   -fcomment-block-commands=threadsafety -o CMakeFiles/cmTC_2a357.dir/src.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command-line option '-fcomment-block-commands=threadsafety'
+gmake[1]: *** [CMakeFiles/cmTC_2a357.dir/build.make:78: CMakeFiles/cmTC_2a357.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_2a357/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_CLANG_COMMENT_BLOCK_COMMANDS failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ff672/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ff672.dir/build.make CMakeFiles/cmTC_ff672.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ff672.dir/src.c.o
+/usr/bin/cc -DHAVE_CLANG_COMMENT_BLOCK_COMMANDS  -D_GNU_SOURCE=1   /clang:-fcomment-block-commands=threadsafety -o CMakeFiles/cmTC_ff672.dir/src.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/src.c
+cc: warning: /clang:-fcomment-block-commands=threadsafety: linker input file unused because linking not done
+cc: error: /clang:-fcomment-block-commands=threadsafety: linker input file not found: No such file or directory
+gmake[1]: *** [CMakeFiles/cmTC_ff672.dir/build.make:78: CMakeFiles/cmTC_ff672.dir/src.c.o] Error 1
+gmake[1]: *** Deleting file 'CMakeFiles/cmTC_ff672.dir/src.c.o'
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_ff672/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the _i64toa exist failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_00d9e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_00d9e.dir/build.make CMakeFiles/cmTC_00d9e.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00d9e.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_00d9e.dir/CheckSymbolExists.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: error: ‘_i64toa’ undeclared (first use in this function)
+   25 |   return ((int*)(&_i64toa))[argc];
+      |                   ^~~~~~~
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_00d9e.dir/build.make:78: CMakeFiles/cmTC_00d9e.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_00d9e/fast] Error 2
+
+
+File /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+#include <iconv.h>
+#include <inttypes.h>
+#include <limits.h>
+#include <malloc.h>
+#include <math.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/types.h>
+#include <time.h>
+#include <wchar.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _i64toa
+  return ((int*)(&_i64toa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the itoa exist failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_33683/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_33683.dir/build.make CMakeFiles/cmTC_33683.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_33683.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_33683.dir/CheckSymbolExists.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: error: ‘itoa’ undeclared (first use in this function)
+   25 |   return ((int*)(&itoa))[argc];
+      |                   ^~~~
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_33683.dir/build.make:78: CMakeFiles/cmTC_33683.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_33683/fast] Error 2
+
+
+File /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+#include <iconv.h>
+#include <inttypes.h>
+#include <limits.h>
+#include <malloc.h>
+#include <math.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/types.h>
+#include <time.h>
+#include <wchar.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef itoa
+  return ((int*)(&itoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ltoa exist failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_45f2b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_45f2b.dir/build.make CMakeFiles/cmTC_45f2b.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45f2b.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_45f2b.dir/CheckSymbolExists.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: error: ‘_ltoa’ undeclared (first use in this function)
+   25 |   return ((int*)(&_ltoa))[argc];
+      |                   ^~~~~
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_45f2b.dir/build.make:78: CMakeFiles/cmTC_45f2b.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_45f2b/fast] Error 2
+
+
+File /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+#include <iconv.h>
+#include <inttypes.h>
+#include <limits.h>
+#include <malloc.h>
+#include <math.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/types.h>
+#include <time.h>
+#include <wchar.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ltoa
+  return ((int*)(&_ltoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sqr exist failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c5281/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c5281.dir/build.make CMakeFiles/cmTC_c5281.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c5281.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_c5281.dir/CheckSymbolExists.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: error: ‘sqr’ undeclared (first use in this function); did you mean ‘sqrt’?
+   25 |   return ((int*)(&sqr))[argc];
+      |                   ^~~
+      |                   sqrt
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_c5281.dir/build.make:78: CMakeFiles/cmTC_c5281.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_c5281/fast] Error 2
+
+
+File /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+#include <iconv.h>
+#include <inttypes.h>
+#include <limits.h>
+#include <malloc.h>
+#include <math.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/types.h>
+#include <time.h>
+#include <wchar.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sqr
+  return ((int*)(&sqr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlcat exist failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_07cdf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_07cdf.dir/build.make CMakeFiles/cmTC_07cdf.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_07cdf.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_07cdf.dir/CheckSymbolExists.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: error: ‘strlcat’ undeclared (first use in this function); did you mean ‘strncat’?
+   25 |   return ((int*)(&strlcat))[argc];
+      |                   ^~~~~~~
+      |                   strncat
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_07cdf.dir/build.make:78: CMakeFiles/cmTC_07cdf.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_07cdf/fast] Error 2
+
+
+File /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+#include <iconv.h>
+#include <inttypes.h>
+#include <limits.h>
+#include <malloc.h>
+#include <math.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/types.h>
+#include <time.h>
+#include <wchar.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcat
+  return ((int*)(&strlcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlcpy exist failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_88139/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_88139.dir/build.make CMakeFiles/cmTC_88139.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_88139.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_88139.dir/CheckSymbolExists.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: error: ‘strlcpy’ undeclared (first use in this function); did you mean ‘strncpy’?
+   25 |   return ((int*)(&strlcpy))[argc];
+      |                   ^~~~~~~
+      |                   strncpy
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_88139.dir/build.make:78: CMakeFiles/cmTC_88139.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_88139/fast] Error 2
+
+
+File /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+#include <iconv.h>
+#include <inttypes.h>
+#include <limits.h>
+#include <malloc.h>
+#include <math.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/types.h>
+#include <time.h>
+#include <wchar.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcpy
+  return ((int*)(&strlcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strnstr exist failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7ff1b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7ff1b.dir/build.make CMakeFiles/cmTC_7ff1b.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7ff1b.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_7ff1b.dir/CheckSymbolExists.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: error: ‘strnstr’ undeclared (first use in this function); did you mean ‘strstr’?
+   25 |   return ((int*)(&strnstr))[argc];
+      |                   ^~~~~~~
+      |                   strstr
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_7ff1b.dir/build.make:78: CMakeFiles/cmTC_7ff1b.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_7ff1b/fast] Error 2
+
+
+File /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+#include <iconv.h>
+#include <inttypes.h>
+#include <limits.h>
+#include <malloc.h>
+#include <math.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/types.h>
+#include <time.h>
+#include <wchar.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strnstr
+  return ((int*)(&strnstr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcslcat exist failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2e4cc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2e4cc.dir/build.make CMakeFiles/cmTC_2e4cc.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2e4cc.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_2e4cc.dir/CheckSymbolExists.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: error: ‘wcslcat’ undeclared (first use in this function); did you mean ‘wcsncat’?
+   25 |   return ((int*)(&wcslcat))[argc];
+      |                   ^~~~~~~
+      |                   wcsncat
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_2e4cc.dir/build.make:78: CMakeFiles/cmTC_2e4cc.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_2e4cc/fast] Error 2
+
+
+File /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+#include <iconv.h>
+#include <inttypes.h>
+#include <limits.h>
+#include <malloc.h>
+#include <math.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/types.h>
+#include <time.h>
+#include <wchar.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcslcat
+  return ((int*)(&wcslcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcslcpy exist failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7e50e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7e50e.dir/build.make CMakeFiles/cmTC_7e50e.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7e50e.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_7e50e.dir/CheckSymbolExists.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: error: ‘wcslcpy’ undeclared (first use in this function); did you mean ‘wcsncpy’?
+   25 |   return ((int*)(&wcslcpy))[argc];
+      |                   ^~~~~~~
+      |                   wcsncpy
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:25:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_7e50e.dir/build.make:78: CMakeFiles/cmTC_7e50e.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_7e50e/fast] Error 2
+
+
+File /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+#include <iconv.h>
+#include <inttypes.h>
+#include <limits.h>
+#include <malloc.h>
+#include <math.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/types.h>
+#include <time.h>
+#include <wchar.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcslcpy
+  return ((int*)(&wcslcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sysctlbyname exist failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fccc8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fccc8.dir/build.make CMakeFiles/cmTC_fccc8.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fccc8.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_fccc8.dir/CheckSymbolExists.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:10: fatal error: sys/sysctl.h: No such file or directory
+    3 | #include <sys/sysctl.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_fccc8.dir/build.make:78: CMakeFiles/cmTC_fccc8.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_fccc8/fast] Error 2
+
+
+File /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <sys/sysctl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysctlbyname
+  return ((int*)(&sysctlbyname))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the elf_aux_info exist failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1873b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1873b.dir/build.make CMakeFiles/cmTC_1873b.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1873b.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_1873b.dir/CheckSymbolExists.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘elf_aux_info’ undeclared (first use in this function)
+    8 |   return ((int*)(&elf_aux_info))[argc];
+      |                   ^~~~~~~~~~~~
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_1873b.dir/build.make:78: CMakeFiles/cmTC_1873b.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_1873b/fast] Error 2
+
+
+File /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/auxv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef elf_aux_info
+  return ((int*)(&elf_aux_info))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test ICONV_IN_LIBICONV failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7b615/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7b615.dir/build.make CMakeFiles/cmTC_7b615.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b615.dir/src.c.o
+/usr/bin/cc -DICONV_IN_LIBICONV  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_7b615.dir/src.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7b615
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b615.dir/link.txt --verbose=1
+/usr/bin/cc   -D_GNU_SOURCE=1 CMakeFiles/cmTC_7b615.dir/src.c.o -o cmTC_7b615  -liconv 
+/usr/bin/ld: cannot find -liconv: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_7b615.dir/build.make:99: cmTC_7b615] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_7b615/fast] Error 2
+
+
+Source file was:
+
+        #include <stddef.h>
+        #include <iconv.h>
+        int main(int argc, char **argv) {
+            return !iconv_open(NULL,NULL);
+        }
+Performing C SOURCE FILE Test HAVE_OPENGL_GLX failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_26cfa/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_26cfa.dir/build.make CMakeFiles/cmTC_26cfa.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_26cfa.dir/src.c.o
+/usr/bin/cc -DHAVE_OPENGL_GLX  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_26cfa.dir/src.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/src.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: GL/glx.h: No such file or directory
+    2 |         #include <GL/glx.h>
+      |                  ^~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_26cfa.dir/build.make:78: CMakeFiles/cmTC_26cfa.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_26cfa/fast] Error 2
+
+
+Source file was:
+
+        #include <GL/glx.h>
+        int main(int argc, char** argv) { return 0; }
+Performing C SOURCE FILE Test HAVE_OPENGL failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1cca2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1cca2.dir/build.make CMakeFiles/cmTC_1cca2.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1cca2.dir/src.c.o
+/usr/bin/cc -DHAVE_OPENGL  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_1cca2.dir/src.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/src.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: GL/gl.h: No such file or directory
+    2 |         #include <GL/gl.h>
+      |                  ^~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_1cca2.dir/build.make:78: CMakeFiles/cmTC_1cca2.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_1cca2/fast] Error 2
+
+
+Source file was:
+
+        #include <GL/gl.h>
+        #include <GL/glext.h>
+        int main(int argc, char** argv) { return 0; }
+Performing C SOURCE FILE Test HAVE_OPENGLES_V1 failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c243e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c243e.dir/build.make CMakeFiles/cmTC_c243e.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c243e.dir/src.c.o
+/usr/bin/cc -DHAVE_OPENGLES_V1 -I/home/kopy/Desktop/repos/sdl2-tutorials/lib/SDL/src/video/khronos -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_c243e.dir/src.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/src.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: GLES/gl.h: No such file or directory
+    2 |         #include <GLES/gl.h>
+      |                  ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_c243e.dir/build.make:78: CMakeFiles/cmTC_c243e.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_c243e/fast] Error 2
+
+
+Source file was:
+
+        #include <GLES/gl.h>
+        #include <GLES/glext.h>
+        int main (int argc, char** argv) { return 0; }
+Determining if the include file libudev.h exists failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5cdb2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5cdb2.dir/build.make CMakeFiles/cmTC_5cdb2.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5cdb2.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_5cdb2.dir/CheckIncludeFile.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: libudev.h: No such file or directory
+    1 | #include <libudev.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_5cdb2.dir/build.make:78: CMakeFiles/cmTC_5cdb2.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_5cdb2/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test LIBC_HAS_WORKING_LIBUNWIND failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_638da/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_638da.dir/build.make CMakeFiles/cmTC_638da.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_638da.dir/src.c.o
+/usr/bin/cc -DLIBC_HAS_WORKING_LIBUNWIND  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_638da.dir/src.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/src.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: libunwind.h: No such file or directory
+    1 | #include <libunwind.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_638da.dir/build.make:78: CMakeFiles/cmTC_638da.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_638da/fast] Error 2
+
+
+Source file was:
+#include <libunwind.h>
+int main() {unw_context_t context; unw_getcontext(&context); return 0;}
+Performing C SOURCE FILE Test LIBUNWIND_HAS_WORKINGLIBUNWIND failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_faa86/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_faa86.dir/build.make CMakeFiles/cmTC_faa86.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_faa86.dir/src.c.o
+/usr/bin/cc -DLIBUNWIND_HAS_WORKINGLIBUNWIND  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_faa86.dir/src.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/src.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: libunwind.h: No such file or directory
+    1 | #include <libunwind.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_faa86.dir/build.make:78: CMakeFiles/cmTC_faa86.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_faa86/fast] Error 2
+
+
+Source file was:
+#include <libunwind.h>
+int main() {unw_context_t context; unw_getcontext(&context); return 0;}
+Determining if the include file pthread_np.h exists failed with the following output:
+Change Dir: /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_629f4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_629f4.dir/build.make CMakeFiles/cmTC_629f4.dir/build
+gmake[1]: Entering directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_629f4.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -D_GNU_SOURCE=1 -D_REENTRANT -pthread -o CMakeFiles/cmTC_629f4.dir/CheckIncludeFile.c.o -c /home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: pthread_np.h: No such file or directory
+    1 | #include <pthread_np.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_629f4.dir/build.make:78: CMakeFiles/cmTC_629f4.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/kopy/Desktop/repos/sdl2-tutorials/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_629f4/fast] Error 2
+
+
+

@@ -55,10 +55,10 @@ bool loadMedia() {
   // Load the dot texture
   dotTexture = ktexture_init();
 
-  //if (!ktexture_load_from_file(state.renderer, dotTexture, "dot.bmp")) {
-  //  SDL_Log("Failed to load dot texture!\n");
-  //  success = false;
-  //}
+  if (!ktexture_load_from_file(state.renderer, dotTexture, "dot.bmp")) {
+    SDL_Log("Failed to load dot texture!\n");
+    success = false;
+  }
 
   return success;
 }

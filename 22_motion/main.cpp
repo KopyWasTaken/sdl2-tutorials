@@ -1,7 +1,7 @@
 // ========================== Includes ==========================
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
-#include <SDL2/SDL_ttf.h>
+#include "SDL2/SDL.h"
+#include "SDL2/SDL_image.h"
+#include "SDL2/SDL_ttf.h"
 #include <stdio.h>
 #include <string>
 #include <sstream>
@@ -10,7 +10,7 @@
 // screen constants
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
-const int SCREEN_FPS = 420;
+const int SCREEN_FPS = 60;
 const int SCREEN_TICKS_PER_FRAME = 1000 / SCREEN_FPS;
 
 // Button constants
@@ -230,6 +230,9 @@ TTF_Font* gFont = NULL;
 // Time texture and prompt textures 
 LTexture gTimeTexture;
 
+// Dot texture
+LTexture gDotTexture;
+
 // Global key textures
 LTexture gUpTexture;
 LTexture gDownTexture;
@@ -241,6 +244,92 @@ LTexture gPressTexture;
 LTexture gButtonSpriteSheetTexture;
 SDL_Rect gButtonClips[TOTAL_BUTTONS];
 LButton gButtons[TOTAL_BUTTONS];
+
+// ========================== Dot Class (with implementation) ==========================
+class Dot {
+  private:
+    // X and Y offsets of the dot
+    int mPosX, mPosY;
+    
+    // Dot velocity
+    int mVelX, mVelY;
+
+  public:
+    // The dot dimensions
+    static const int DOT_WIDTH = 20;
+    static const int DOT_HEIGHT = 20;
+
+    // Maximum axis velocity of the dot
+    static const int DOT_VEL = 10;
+
+    // Constructor
+    Dot()
+    {
+      // Init offsets
+      mPosX = 0;
+      mPosY = 0;
+
+      // Init velocity
+      mVelX = 0;
+      mVelY = 0;
+    }
+
+    void handleEvent(SDL_Event& e) 
+    {
+      // if a key was pressed
+      if (e.type == SDL_KEYDOWN && e.key.repeat == 0) 
+      { 
+        // adjust the velocity
+        switch (e.key.keysym.sym)
+        {
+          case SDLK_UP: mVelY -= DOT_VEL; break;
+          case SDLK_DOWN: mVelY += DOT_VEL; break;
+          case SDLK_LEFT: mVelX -= DOT_VEL; break;
+          case SDLK_RIGHT: mVelX += DOT_VEL; break;
+        }
+      }
+      else if (e.type == SDL_KEYUP && e.key.repeat == 0)
+      {
+        switch (e.key.keysym.sym)
+        {
+          case SDLK_UP: mVelY += DOT_VEL; break;
+          case SDLK_DOWN: mVelY -= DOT_VEL; break;
+          case SDLK_LEFT: mVelX += DOT_VEL; break;
+          case SDLK_RIGHT: mVelX -= DOT_VEL; break;
+        }
+      }
+    }
+
+    void move() 
+    {
+      // move the dot left or right
+      mPosX += mVelX;
+
+      // if the dot went too far to the left or right
+      if ((mPosX < 0) || (mPosX + DOT_WIDTH > SCREEN_WIDTH))
+      {
+        // Move back
+        mPosX -= mVelX;
+      }
+      
+      // move the dot up or down 
+      mPosY += mVelY;
+
+      // if the dot went too far to the left or right
+      if ((mPosY < 0) || (mPosY + DOT_HEIGHT > SCREEN_HEIGHT))
+      {
+        // Move back
+        mPosY -= mVelY;
+      }
+    }
+
+    void render() 
+    {
+      // show the dot
+      gDotTexture.render(mPosX, mPosY);
+    }
+
+};
 
 // ========================== Button Wrapper Class Function Definitions ==========================
 LButton::LButton()
@@ -507,7 +596,7 @@ bool init()
 		else
 		{
 			// initialize the renderer for the window
-			gRenderer = SDL_CreateRenderer(gWindow, -1, SDL_RENDERER_ACCELERATED);
+			gRenderer = SDL_CreateRenderer(gWindow, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 			if (gRenderer == NULL)
 			{
 				printf("Renderer could not be initialized! SDL_Error: %s\n", SDL_GetError());
@@ -554,20 +643,21 @@ bool loadMedia()
 	}
 	#endif
 
+  // load the dot texture
+  if (!gDotTexture.loadFromFile("media/dot.bmp"))
+  {
+    printf("Failed to load dot texture!\n");
+    success = false;
+  }
+
 	return success;
 }
 
 void close()
 {
-	// you might think we have to free the textures that we declared as globals, but actually
-	// they go out of scope and the destructor is automatically called, which is dope
-	// the only reason these are listed here is because they should be freed if they 
-	// weren't global resources 
-	gTimeTexture.free();
 
-	// Free the global font
-	TTF_CloseFont(gFont);
-	gFont = NULL;
+  // Delete loaded texures
+  gDotTexture.free();
 
 	// Destroy the window
 	SDL_DestroyRenderer(gRenderer);
@@ -614,28 +704,12 @@ int main( int argc, char* args[])
 		// Event handler 
 		SDL_Event e;
 
-		// set text color as black
-		SDL_Color textColor = {0,0,0,255};
-
-		// frames per second timer 
-		LTimer fpsTimer;
-
-		// the frames per second cap timer
-		LTimer capTimer;
-
-		// In memory text stream
-		std::stringstream timeText;
-
-		// start counting frames per second
-		int countedFrames = 0;
-		fpsTimer.start();
+    // The dot that will be moving around the screen
+    Dot dot;
 
 		// The main loop of the game
 		while (!quit) 
 		{
-			// start the cap timer
-			capTimer.start();
-
 			// handle events on the queue
 			while (SDL_PollEvent(&e) != 0) 
 			{
@@ -644,48 +718,28 @@ int main( int argc, char* args[])
 				{
 					quit = true;
 				}
+
+        // handle input for the dot
+        dot.handleEvent(e);
 			}
 
-			// Calculate and correct fps
-			float avgFps = countedFrames / (fpsTimer.getTicks() / 1000.f);
-			if (avgFps > 2000000)
-			{
-				avgFps = 0;
-			}
-
-			// set text to be rendered
-			timeText.str("");
-			timeText << "Average frames per second (with cap) " << avgFps; 
-
-			// render text
-			if (!gTimeTexture.loadFromRenderedText(timeText.str().c_str(), textColor))
-			{
-				printf("Unable to render time texture!\n");
-			}
+      // Move the dot
+      dot.move();
 
 			// Clear the screen
 			SDL_SetRenderDrawColor(gRenderer, 0xFF, 0xFF, 0xFF, 0xFF);
 			SDL_RenderClear(gRenderer);
 
-			// render textures 
-			gTimeTexture.render((SCREEN_WIDTH - gTimeTexture.getWidth()) / 2, (SCREEN_HEIGHT - gTimeTexture.getHeight()) / 2);
+      // render dot
+      dot.render();
 
 			// Update screen
 			SDL_RenderPresent(gRenderer);
-			++countedFrames;
-
-			// if the frame finished early
-			int frameTicks = capTimer.getTicks();
-			if (frameTicks < SCREEN_TICKS_PER_FRAME)
-			{
-				// wait the remaining time
-				SDL_Delay(SCREEN_TICKS_PER_FRAME - frameTicks);
-			}
 		}
 	}
 
 	// close out resources and SDL
 	close();
 
-  	return 0;
+  return 0;
 }
